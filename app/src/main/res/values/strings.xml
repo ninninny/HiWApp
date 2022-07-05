@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">HiW App</string>
-    <string name="cover_button">GO</string>
+    <string name="cover_button">ใช้งานแอพ</string>
+    <string name="review_filter_text">กินไรดีนะ</string>
+    <string name="review_filter_placeholder">Type Something..</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

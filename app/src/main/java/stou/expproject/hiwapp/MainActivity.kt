@@ -1,5 +1,6 @@
 package stou.expproject.hiwapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
@@ -10,7 +11,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        findViewById<TextView>(R.id.textView).text = "Welcome to the new activity"
+        val reviewList = Intent(this,ReviewList::class.java)
 
+        findViewById<Button>(R.id.coverButton).setOnClickListener{
+            startActivity(reviewList)
+        }
     }
 }
