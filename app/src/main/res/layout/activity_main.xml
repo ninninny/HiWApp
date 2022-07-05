@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="252dp"
-        android:layout_height="103dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         app:flow_verticalGap="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,7 +20,7 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:contentDescription="HiW logo"
+            android:contentDescription="@string/app_name"
             app:srcCompat="@mipmap/logo_full" />
 
         <TextView
@@ -36,9 +36,10 @@
 
         <Button
             android:id="@+id/coverButton"
-            android:layout_width="56dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="GO" />
+            android:layout_marginTop="16dp"
+            android:text="@string/cover_button" />
 
 
     </LinearLayout>

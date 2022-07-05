@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">HiW App</string>
+    <string name="cover_button">GO</string>
 </resources>
