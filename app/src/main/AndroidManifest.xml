@@ -13,19 +13,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HiWApp"
         tools:targetApi="31">
-        <activity android:name=".MainActivity"
-            android:exported="true"
-            >
+        <activity
+            android:name=".ReviewEdit"
+            android:exported="true" />
+        <activity
+            android:name=".ReviewAdd"
+            android:exported="true" />
+        <activity
+            android:name=".Register"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true" />
+        <activity
+            android:name=".UserDashboard"
+            android:exported="true" />
+        <activity
+            android:name=".ReviewDetail"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ReviewList"
+        <activity
+            android:name=".ReviewList"
             android:exported="true"
-            tools:ignore="DuplicateActivity">
-        </activity>
-
+            tools:ignore="DuplicateActivity" />
     </application>
 
 </manifest>

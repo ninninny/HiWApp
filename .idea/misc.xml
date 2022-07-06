@@ -4,7 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/STOU/99429/HiWApp/app/src/main/res/font/kanit_font_family.xml" value="0.2953125" />
+        <entry key="..\:/STOU/99429/HiWApp/app/src/main/res/layout/activity_list_review.xml" value="0.23233695652173914" />
+        <entry key="..\:/STOU/99429/HiWApp/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
         <entry key="..\:/STOU/99429/HiWApp/app/src/main/res/layout/activity_main.xml" value="0.16203703703703703" />
+        <entry key="..\:/STOU/99429/HiWApp/app/src/main/res/layout/activity_register.xml" value="0.26992753623188404" />
+        <entry key="..\:/STOU/99429/HiWApp/app/src/main/res/layout/activity_review_add.xml" value="0.26992753623188404" />
+        <entry key="..\:/STOU/99429/HiWApp/app/src/main/res/layout/activity_review_detail.xml" value="0.36666666666666664" />
+        <entry key="..\:/STOU/99429/HiWApp/app/src/main/res/layout/activity_review_edit.xml" value="0.26992753623188404" />
+        <entry key="..\:/STOU/99429/HiWApp/app/src/main/res/layout/activity_user_dashboard.xml" value="0.36666666666666664" />
         <entry key="..\:/STOU/99429/HiWApp/app/src/main/res/layout/fragment_app_head.xml" value="0.18802083333333333" />
         <entry key="..\:/STOU/99429/HiWApp/app/src/main/res/layout/list_review.xml" value="0.29030797101449274" />
       </map>
