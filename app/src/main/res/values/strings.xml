@@ -23,4 +23,7 @@
     <string name="input_review_description">รายละเอียดรีวิว</string>
     <string name="input_review_thumbnail">รูปอาหาร</string>
     <string name="input_review_thumb_spec">ไฟล์ที่รองรับ \n.jpg, .jpeg, .png \n\nขนาดไม่เกิน 2MB</string>
+
+    <string name="tmp_review_title">Shinsen น้ำส้มคั้น 100%</string>
+    <string name="tmp_review_desc">รสชาติเข้มข้นตามแบบฉบับน้ำส้มสำเร็จรูป แช่ช่องฟรีซให้เป็นเกล็ดน้ำแข็ง จะเย็นชื่นใจมาก เหมาะกับการดื่มช่วงบ่ายๆของวันทำงาน</string>
 </resources>
