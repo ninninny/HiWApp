@@ -13,10 +13,10 @@ class ReviewDetail : AppCompatActivity() {
         val reviewList = Intent(this,ReviewList::class.java)
         val loginPage = Intent(this,Login::class.java)
 
-        findViewById<Button>(R.id.btnLogin).setOnClickListener{
+        findViewById<Button>(R.id.btnLoginOnDetail).setOnClickListener{
             startActivity(loginPage)
         }
-        findViewById<Button>(R.id.btnAllReview).setOnClickListener{
+        findViewById<Button>(R.id.btnAllReviewOnDetail).setOnClickListener{
             startActivity(reviewList)
         }
 

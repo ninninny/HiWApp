@@ -64,6 +64,15 @@
                 START RATING
             </LinearLayout>-->
 
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="10"
+                android:numStars="5"
+                android:stepSize="0.5" />
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -72,10 +81,12 @@
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
+
+
         </LinearLayout>
 
         <Button
-            android:id="@+id/btnAllReview"
+            android:id="@+id/btnAllReviewOnDetail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -108,7 +119,7 @@
             tools:layout_editor_absoluteX="88dp" />
 
         <Button
-            android:id="@+id/btnLogin"
+            android:id="@+id/btnLoginOnDetail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"

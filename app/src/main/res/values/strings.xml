@@ -5,6 +5,7 @@
     <string name="text_review_filter">กินอะไรดีนะ?</string>
     <string name="text_member_ask">ยังไม่ได้เป็นสมาชิก?</string>
     <string name="text_review_author">Review by</string>
+    <string name="text_search">ค้นหา</string>
 
     <string name="button_login">ล็อคอิน</string>
     <string name="button_logout">ล็อคเอ้าท์</string>
