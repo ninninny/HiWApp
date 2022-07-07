@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "618977866801",
+    "firebase_url": "https://hiwapp-f18b9-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "hiwapp-f18b9",
+    "storage_bucket": "hiwapp-f18b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618977866801:android:3714e37eec8b7f0d1a5110",
+        "android_client_info": {
+          "package_name": "stou.expproject.hiwapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "618977866801-m3shhrcf4a1djgtj8bga5c656icc6nt9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSfcFIPfBm5CBgv0DWsit7Wnu0wBG3y9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "618977866801-m3shhrcf4a1djgtj8bga5c656icc6nt9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
