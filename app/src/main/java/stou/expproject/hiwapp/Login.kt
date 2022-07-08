@@ -60,6 +60,8 @@ class Login : AppCompatActivity() {
         val fromRegEmail =intent.getStringExtra("email").toString()
         ms.register(fromRegName,fromRegPass,fromRegEmail)
 
+        ms.register("test","test","test")
+
         val member = ms.login(user,pass)
         //startActivity(userDashboardPage)
         if(member == User("unknown")){
