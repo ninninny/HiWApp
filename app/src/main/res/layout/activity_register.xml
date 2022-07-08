@@ -20,9 +20,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/layout_bg"
         android:paddingLeft="20dp"
         android:paddingTop="20dp"
@@ -33,82 +33,105 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/btnBackOnRegister"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="20dp"
-            android:text="@string/button_back"
-            android:textColor="@color/blue" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_centerVertical="true">
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/inputUserImage"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/user_image_input" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/input_username"
-                android:labelFor="@+id/inputUsername"/>
+                android:labelFor="@+id/inputUsername"
+                android:text="@string/input_username" />
+
             <EditText
                 android:id="@+id/inputUsername"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints="username"
-                android:inputType="text"/>
+                android:inputType="text" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/input_email"
                 android:layout_marginTop="16dp"
-                android:labelFor="@+id/inputEmail"/>
+                android:labelFor="@+id/inputEmail"
+                android:text="@string/input_email" />
+
             <EditText
                 android:id="@+id/inputEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints="emailAddress"
-                android:inputType="textEmailAddress"/>
+                android:inputType="textEmailAddress" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/input_password"
                 android:layout_marginTop="16dp"
-                android:labelFor="@+id/inputPassword"/>
+                android:labelFor="@+id/inputPassword"
+                android:text="@string/input_password" />
+
             <EditText
                 android:id="@+id/inputPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints="password"
-                android:inputType="textPassword"/>
+                android:inputType="textPassword" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/input_confirm_password"
                 android:layout_marginTop="16dp"
-                android:labelFor="@+id/inputConfirmPassword"/>
+                android:labelFor="@+id/inputConfirmPassword"
+                android:text="@string/input_confirm_password" />
+
             <EditText
                 android:id="@+id/inputConfirmPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints="password"
-                android:inputType="textPassword"/>
+                android:inputType="textPassword" />
+
             <Button
                 android:id="@+id/btnRegisterOnRegister"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/button_register"
                 android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="20dp"
                 android:fontFamily="@font/kanit_regular"
-                app:cornerRadius="22dp"
-                android:layout_marginBottom="30dp"
-                android:layout_marginTop="16dp"/>
+                android:text="@string/button_register"
+                app:cornerRadius="22dp" />
 
-
-
+            <TextView
+                android:id="@+id/btnBackOnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/button_back"
+                android:textColor="@color/blue" />
         </LinearLayout>
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_small" />
 
     </RelativeLayout>
 

@@ -1,8 +1,10 @@
 package stou.expproject.hiwapp
 
 import android.widget.Toast
+import androidx.room.*
 
 class MemberService(var map: HashMap<String, User>) {
+
     fun register(username:String, pass:String, email:String){
         val u = User()
         u.userName = username

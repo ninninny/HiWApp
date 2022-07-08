@@ -37,6 +37,10 @@ class Register : AppCompatActivity() {
             startActivity(loginPage)
         }
 
+        findViewById<ImageView>(R.id.inputUserImage).setOnClickListener{
+            findViewById<ImageView>(R.id.inputUserImage).setImageResource(R.drawable.user_image_default)
+        }
+
     } // END onCreate
 
     private fun addMember(m:MemberService){
@@ -59,7 +63,7 @@ class Register : AppCompatActivity() {
         }
         if(pass == cfPass){
             //m.register(name,cfPass,email)
-            Toast.makeText(this, "SUCCESS! Thank you for your review.", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Registration SUCCESS!", Toast.LENGTH_LONG).show()
             // Clear inputs after submit
             txtName.text = null
             txtEmail.text = null

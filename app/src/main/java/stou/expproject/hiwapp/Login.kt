@@ -60,7 +60,7 @@ class Login : AppCompatActivity() {
         val fromRegEmail =intent.getStringExtra("email").toString()
         ms.register(fromRegName,fromRegPass,fromRegEmail)
 
-        ms.register("test","test","test")
+        ms.register("EatLikeAStrom","testtest","test@test.com")
 
         val member = ms.login(user,pass)
         //startActivity(userDashboardPage)
@@ -71,7 +71,9 @@ class Login : AppCompatActivity() {
             return
         } else {
             //Toast.makeText(this,"Yeah", Toast.LENGTH_LONG).show()
-            startActivity(userDashboardPage)
+            val intent = Intent(this@Login,UserDashboard::class.java)
+            intent.putExtra("name",user)
+            startActivity(intent)
         }
     }
 }
