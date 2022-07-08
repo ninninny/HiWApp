@@ -4,11 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="0dp"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="252dp"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:background="@drawable/bottom"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="@drawable/top"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="vertical"
         app:flow_verticalGap="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,27 +43,28 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:contentDescription="@string/app_name"
-            app:srcCompat="@mipmap/logo_full" />
+            app:srcCompat="@drawable/logo_full"
+            android:paddingBottom="90dp"/>
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:gravity="center_horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
+        <!--
+       <Button
             android:id="@+id/coverButton"
-            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="@string/cover_button" />
-
-
+            android:fontFamily="@font/kanit_regular"
+            android:includeFontPadding="false"
+            android:paddingLeft="22dp"
+            android:paddingTop="10dp"
+            android:paddingRight="22dp"
+            android:paddingBottom="10dp"
+            android:text="@string/cover_button"
+            android:textSize="24sp"
+            app:cornerRadius="22dp" />-->
     </LinearLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

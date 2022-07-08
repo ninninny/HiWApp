@@ -1,4 +1,30 @@
 <resources>
     <string name="app_name">HiW App</string>
-    <string name="cover_button">GO</string>
+    <string name="cover_button">ใช้งานแอพ</string>
+
+    <string name="text_review_filter">กินอะไรดีนะ?</string>
+    <string name="text_member_ask">ยังไม่ได้เป็นสมาชิก?</string>
+    <string name="text_review_author">Review by</string>
+    <string name="text_search">ค้นหา</string>
+
+    <string name="button_login">ล็อคอิน</string>
+    <string name="button_logout">ล็อคเอ้าท์</string>
+    <string name="button_register">สมัครสมาชิก</string>
+    <string name="button_all_review">ดูรีวิวทั้งหมด</string>
+    <string name="button_post_review">โพสรีวิว</string>
+    <string name="button_cancel">ยกเลิก</string>
+    <string name="button_back">ย้อนกลับ</string>
+
+    <string name="input_username">ชื่อผู้ใช้งาน</string>
+    <string name="input_password">รหัสผ่าน</string>
+    <string name="input_confirm_password">ยืนยันรหัสผ่าน</string>
+    <string name="input_email">อีเมล์</string>
+    <string name="input_review_topic">หัวข้อของรีวิว</string>
+    <string name="input_review_score">ให้คะแนน (เต็ม 10)</string>
+    <string name="input_review_description">รายละเอียดรีวิว</string>
+    <string name="input_review_thumbnail">รูปอาหาร</string>
+    <string name="input_review_thumb_spec">ไฟล์ที่รองรับ \n.jpg, .jpeg, .png \n\nขนาดไม่เกิน 2MB</string>
+
+    <string name="tmp_review_title">Shinsen น้ำส้มคั้น 100%</string>
+    <string name="tmp_review_desc">รสชาติเข้มข้นตามแบบฉบับน้ำส้มสำเร็จรูป แช่ช่องฟรีซให้เป็นเกล็ดน้ำแข็ง จะเย็นชื่นใจมาก เหมาะกับการดื่มช่วงบ่ายๆของวันทำงาน</string>
 </resources>
