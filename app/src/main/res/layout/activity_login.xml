@@ -34,12 +34,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="250dp"
-            android:layout_height="150dp"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/logo_full"
+            android:layout_width="220dp"
+            android:layout_height="120dp"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_full" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -99,8 +99,16 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/kanit_regular"
                 app:cornerRadius="22dp"
-                android:layout_marginBottom="30dp"
+                android:layout_marginBottom="20dp"
                 android:layout_marginTop="16dp"/>
+            <TextView
+                android:id="@+id/btnBackOnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:text="@string/button_back"
+                android:textColor="@color/blue" />
         </LinearLayout>
 
     </RelativeLayout>

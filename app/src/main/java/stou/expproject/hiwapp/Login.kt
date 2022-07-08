@@ -18,6 +18,7 @@ class Login : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         val registerPage = Intent(this,Register::class.java)
+        val reviewList = Intent(this,ReviewList::class.java)
 
         txtUsername = findViewById(R.id.inputUsername)
         txtPassword = findViewById(R.id.inputPassword)
@@ -28,6 +29,10 @@ class Login : AppCompatActivity() {
 
         findViewById<Button>(R.id.btnRegisterOnLogin).setOnClickListener {
             startActivity(registerPage)
+        }
+
+        findViewById<TextView>(R.id.btnBackOnLogin).setOnClickListener {
+            startActivity(reviewList)
         }
 
 
@@ -46,6 +51,7 @@ class Login : AppCompatActivity() {
             txtUsername.error = "กรุณาใส่ Password"
             return
         }
+        startActivity(userDashboardPage)
         /*if(){
             startActivity(userDashboardPage)
         } else {

@@ -3,9 +3,9 @@ package stou.expproject.hiwapp
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.imageview.ShapeableImageView
 
 class MyAdapter(private val reviewList: ArrayList<ReviewItem>) : RecyclerView.Adapter<MyAdapter.MyViewHolder> (){
 
@@ -26,7 +26,7 @@ class MyAdapter(private val reviewList: ArrayList<ReviewItem>) : RecyclerView.Ad
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
-        val reviewThumb : ShapeableImageView = itemView.findViewById(R.id.reviewThumb)
+        val reviewThumb : ImageView = itemView.findViewById(R.id.reviewThumb)
         val reviewTitle : TextView = itemView.findViewById(R.id.reviewTitle)
     }
 }
