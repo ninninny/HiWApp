@@ -3,10 +3,7 @@ package stou.expproject.hiwapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.UserManager
-import android.view.View
 import android.widget.*
-import com.google.firebase.database.FirebaseDatabase
 
 class Login : AppCompatActivity() {
 
@@ -52,28 +49,5 @@ class Login : AppCompatActivity() {
             return
         }
 
-        val memberData = HashMap<String, User>()
-        val ms = MemberService(memberData)
-
-        val fromRegName =intent.getStringExtra("name").toString()
-        val fromRegPass =intent.getStringExtra("pass").toString()
-        val fromRegEmail =intent.getStringExtra("email").toString()
-        ms.register(fromRegName,fromRegPass,fromRegEmail)
-
-        ms.register("EatLikeAStrom","testtest","test@test.com")
-
-        val member = ms.login(user,pass)
-        //startActivity(userDashboardPage)
-        if(member == User("unknown")){
-            Toast.makeText(this,"Bad combination, please try again.", Toast.LENGTH_LONG).show()
-            txtUsername.text = null
-            txtPassword.text = null
-            return
-        } else {
-            //Toast.makeText(this,"Yeah", Toast.LENGTH_LONG).show()
-            val intent = Intent(this@Login,UserDashboard::class.java)
-            intent.putExtra("name",user)
-            startActivity(intent)
-        }
     }
 }

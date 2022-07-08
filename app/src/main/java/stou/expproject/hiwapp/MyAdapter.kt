@@ -23,7 +23,7 @@ class MyAdapter(private val reviewList: ArrayList<ReviewItem>) : RecyclerView.Ad
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = reviewList[position]
-        holder.reviewThumb.setBackgroundResource(currentItem.reviewThumb)
+        currentItem.reviewThumb?.let { holder.reviewThumb.setBackgroundResource(it) }
         holder.reviewTitle.text = currentItem.reviewTitle
 
         /*holder.reviewThumb.setOnClickListener(){

@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.widget.*
-//import com.google.firebase.FirebaseApp
-//import com.google.firebase.database.FirebaseDatabase
 
 class Register : AppCompatActivity() {
 
@@ -26,11 +24,8 @@ class Register : AppCompatActivity() {
         txtPass = findViewById(R.id.inputPassword)
         txtConPass = findViewById(R.id.inputConfirmPassword)
 
-        val memData = hashMapOf<String, User>()
-        val ms = MemberService(memData)
-
         findViewById<Button>(R.id.btnRegisterOnRegister).setOnClickListener {
-            addMember(ms)
+
         }
 
         findViewById<TextView>(R.id.btnBackOnRegister).setOnClickListener {
@@ -43,11 +38,7 @@ class Register : AppCompatActivity() {
 
     } // END onCreate
 
-    private fun addMember(m:MemberService){
-
-        //FirebaseApp.initializeApp(this);
-        //val ref = FirebaseDatabase.getInstance().getReferenceFromUrl("https://hiwapp-f18b9-default-rtdb.asia-southeast1.firebasedatabase.app/")
-        //val loginPage = Intent(this,Login::class.java)
+    private fun addMember(){
 
         val name = txtName.text.toString().trim()
         val email = txtEmail.text.toString().trim()
@@ -62,7 +53,7 @@ class Register : AppCompatActivity() {
             return
         }
         if(pass == cfPass){
-            //m.register(name,cfPass,email)
+
             Toast.makeText(this, "Registration SUCCESS!", Toast.LENGTH_LONG).show()
             // Clear inputs after submit
             txtName.text = null
@@ -86,17 +77,5 @@ class Register : AppCompatActivity() {
         }
 
 
-        //val userID = ref.push().key // แบบนี้คนก็สมัคร username ซ้ำได้สิ?
-        //val userMember = User(name, cfPass, email)
-
-        /*ref.child(name).setValue(userMember).addOnCompleteListener {
-            Toast.makeText(this, "SUCCESS! Thank you for your review.", Toast.LENGTH_LONG).show()
-            // Clear inputs after submit
-            txtName.text = null
-            txtEmail.text = null
-            txtPass.text = null
-            txtConPass.text = null
-            startActivity(loginPage)
-        }*/
     }
 }

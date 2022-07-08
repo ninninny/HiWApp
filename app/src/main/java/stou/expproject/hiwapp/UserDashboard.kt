@@ -41,16 +41,7 @@ class UserDashboard : AppCompatActivity() {
     private fun getUserReviewData(name:User) {
 
         val reviewData = ArrayList<ReviewItem>()
-        val rs = ReviewService(reviewData)
-        val user = name
 
-        /*rs.add("review001", R.drawable.review_001, "Good Mate The Original Oatmilk",10, "", testUser)
-        rs.add("review002", R.drawable.review_002, "Methee Cashew Nut",10, "", testUser)
-        rs.add("review003", R.drawable.review_003, "Brave Roasters",10, "", testUser)
-        rs.add("review003", R.drawable.review_004, "เลย์ รสเมี่ยงคำครบรส",10, "", testUser)
-        rs.add("review003", R.drawable.review_005, "Shinsen น้ำส้มคั้น 100%",10, "", testUser)
-        rs.add("review003", R.drawable.review_006, "ราเมนเบอร์เกอร์",10, "", testUser)
-        rs.add("review003", R.drawable.review_007, "meiji Prime yan yan mixed berries and cheese",10, "", testUser)*/
 
         newRecyclerView.adapter = MyAdapter(reviewData)
     }
