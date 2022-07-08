@@ -40,9 +40,13 @@ class ReviewList: AppCompatActivity() {
         val reviewData = ArrayList<ReviewItem>()
         val rs = ReviewService(reviewData)
 
-        rs.add("review001", R.drawable.tmp_review_thumb, "Good Mate The Original Oatmilk")
-        rs.add("review002", R.drawable.tmp_review_thumb, "Methee Cashew Nut")
-        rs.add("review003", R.drawable.tmp_review_thumb, "Shinsen น้ำส้มคั้น 100%")
+        rs.add("review001", R.drawable.review_001, "Good Mate The Original Oatmilk")
+        rs.add("review002", R.drawable.review_002, "Methee Cashew Nut")
+        rs.add("review003", R.drawable.review_003, "Brave Roasters")
+        rs.add("review003", R.drawable.review_004, "เลย์ รสเมี่ยงคำครบรส")
+        rs.add("review003", R.drawable.review_005, "Shinsen น้ำส้มคั้น 100%")
+        rs.add("review003", R.drawable.review_006, "ราเมนเบอร์เกอร์")
+        rs.add("review003", R.drawable.review_007, "meiji Prime yan yan mixed berries and cheese")
 
         newRecyclerView.adapter = MyAdapter(reviewData)
     }

@@ -16,7 +16,7 @@ class MyAdapter(private val reviewList: ArrayList<ReviewItem>) : RecyclerView.Ad
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = reviewList[position]
-        holder.reviewThumb.setImageResource(currentItem.reviewThumb)
+        holder.reviewThumb.setBackgroundResource(currentItem.reviewThumb)
         holder.reviewTitle.text = currentItem.reviewTitle
     }
 
@@ -25,7 +25,6 @@ class MyAdapter(private val reviewList: ArrayList<ReviewItem>) : RecyclerView.Ad
     }
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
-
         val reviewThumb : ImageView = itemView.findViewById(R.id.reviewThumb)
         val reviewTitle : TextView = itemView.findViewById(R.id.reviewTitle)
     }

@@ -3,6 +3,7 @@ package stou.expproject.hiwapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.widget.*
 
 class MainActivity : AppCompatActivity() {
@@ -13,8 +14,12 @@ class MainActivity : AppCompatActivity() {
 
         val reviewList = Intent(this,ReviewList::class.java)
 
-        findViewById<Button>(R.id.coverButton).setOnClickListener{
+        Handler().postDelayed({
             startActivity(reviewList)
-        }
+        }, 2000)
+
+        /*findViewById<Button>(R.id.coverButton).setOnClickListener{
+            startActivity(reviewList)
+        }*/
     }
 }

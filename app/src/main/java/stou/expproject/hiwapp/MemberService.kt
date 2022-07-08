@@ -1,5 +1,7 @@
 package stou.expproject.hiwapp
 
+import android.widget.Toast
+
 class MemberService(var map: HashMap<String, User>) {
     fun register(username:String, pass:String, email:String){
         val u = User()
@@ -16,7 +18,7 @@ class MemberService(var map: HashMap<String, User>) {
                 memLogin = i.value
                 break
             } else {
-
+                memLogin = User("unknown")
             }
         }
         return memLogin

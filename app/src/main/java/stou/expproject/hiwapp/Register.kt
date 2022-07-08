@@ -3,6 +3,7 @@ package stou.expproject.hiwapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.widget.*
 //import com.google.firebase.FirebaseApp
 //import com.google.firebase.database.FirebaseDatabase
@@ -57,13 +58,24 @@ class Register : AppCompatActivity() {
             return
         }
         if(pass == cfPass){
-            m.register(name,cfPass,email)
+            //m.register(name,cfPass,email)
             Toast.makeText(this, "SUCCESS! Thank you for your review.", Toast.LENGTH_LONG).show()
             // Clear inputs after submit
             txtName.text = null
             txtEmail.text = null
             txtPass.text = null
             txtConPass.text = null
+
+            Handler().postDelayed({
+
+                val intent = Intent(this@Register,Login::class.java)
+                intent.putExtra("name",name)
+                intent.putExtra("pass",cfPass)
+                intent.putExtra("email",email)
+                startActivity(intent)
+
+            }, 2000)
+
         } else {
             txtConPass.error = "ยืนยันรหัสผ่านไม่สำเร็จ"
             return

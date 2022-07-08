@@ -48,16 +48,28 @@ class Login : AppCompatActivity() {
             return
         }
         if(pass.isEmpty()){
-            txtUsername.error = "กรุณาใส่ Password"
+            txtPassword.error = "กรุณาใส่ Password"
             return
         }
-        startActivity(userDashboardPage)
-        /*if(){
-            startActivity(userDashboardPage)
-        } else {
+
+        val memberData = HashMap<String, User>()
+        val ms = MemberService(memberData)
+
+        val fromRegName =intent.getStringExtra("name").toString()
+        val fromRegPass =intent.getStringExtra("pass").toString()
+        val fromRegEmail =intent.getStringExtra("email").toString()
+        ms.register(fromRegName,fromRegPass,fromRegEmail)
+
+        val member = ms.login(user,pass)
+        //startActivity(userDashboardPage)
+        if(member == User("unknown")){
             Toast.makeText(this,"Bad combination, please try again.", Toast.LENGTH_LONG).show()
             txtUsername.text = null
             txtPassword.text = null
-        }*/
+            return
+        } else {
+            //Toast.makeText(this,"Yeah", Toast.LENGTH_LONG).show()
+            startActivity(userDashboardPage)
+        }
     }
 }
